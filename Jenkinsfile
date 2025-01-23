@@ -17,10 +17,5 @@ pipeline {
                 sh 'echo "Deployment Ok"'
             }
         }
-        stage('Deploy_2') {
-            steps {
-                sh 'echo "Deployment_2 Ok"'
-            }
-        }
     }
 }
