@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    
+    agent {
+        label 'vishnu_blog'
+    }
 
     stages {
         stage('Build') {
@@ -14,7 +17,12 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo "Deployment Done"'
+                sh 'echo "Deployment Ok"'
+            }
+        }
+        stage('Copy File') {
+            steps {
+                sh 'touch /Users/vishnu/This_PC/Projects/jenkins/nex.txt'
             }
         }
     }
