@@ -121,5 +121,5 @@ app.post("/v1/api/writtenblogs", function (req, res) {
 });
 
 app.listen(3001, () => {
-  console.log('Server is listening on port 3001');
+  console.log('Node Server is listening on port 3001');
 });
